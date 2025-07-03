@@ -1,0 +1,57 @@
+# Icons Required for Extension
+
+## Chrome Web Store Requirements:
+
+### Extension Icons (in manifest):
+- icon16.png (16x16) - Toolbar icon
+- icon48.png (48x48) - Extension management page
+- icon128.png (128x128) - Chrome Web Store
+
+### Store Listing Icons:
+- icon128.png (128x128) - Small tile in Chrome Web Store
+- icon440.png (440x440) - Large tile (optional but recommended)
+
+### Screenshots:
+- 1280x800 or 640x400 - Desktop screenshots
+- 1440x900 recommended resolution
+- At least 1 screenshot required, up to 5 allowed
+
+## Firefox Add-ons Requirements:
+
+### Extension Icons:
+- icon16.png (16x16) - Toolbar icon  
+- icon48.png (48x48) - Add-on manager
+- icon128.png (128x128) - Firefox Add-ons site
+
+### Store Listing:
+- icon128.png (128x128) - Add-ons listing
+- icon512.png (512x512) - Optional larger icon
+
+## Icon Design Guidelines:
+
+### Colors:
+- Primary: Gradient from #667eea to #764ba2 (purple-pink theme)
+- Secondary: Bright accent colors like #00b894 or #fdcb6e
+- Background: Transparent or matching gradient
+
+### Style:
+- Modern flat design with subtle gradients
+- Rounded corners (consistent with modern UI trends)
+- Simple, recognizable symbol (could be abstract gradient layers)
+- Good contrast for visibility in both light and dark themes
+
+### Suggested Icon Concept:
+Three overlapping gradient shapes (like layers) representing the interface transformation:
+- Bottom layer: Dark gradient (representing original interface)
+- Middle layer: Semi-transparent colored gradient
+- Top layer: Bright glow effect
+
+## To Create Icons:
+1. Design base icon at 512x512 resolution
+2. Resize to required dimensions: 16x16, 48x48, 128x128, 440x440
+3. Ensure all sizes remain clear and recognizable
+4. Test on both light and dark backgrounds
+5. Export as PNG with transparency
+
+## Temporary Placeholder:
+For now, you can use simple colored squares with gradients matching the extension themes until proper icons are designed. 

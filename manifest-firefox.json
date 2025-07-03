@@ -1,0 +1,64 @@
+{
+  "manifest_version": 2,
+  "name": "Gradient Glow Interface Pack",
+  "version": "1.0.0",
+  "description": "Transform your browser with stunning gradient glow themes and beautiful interface designs. Customize your browsing experience with modern, eye-catching visual effects.",
+  "author": "XMP",
+  "homepage_url": "http://github.com/tuananh93cp/Gradient-Glow-Interface-Pack",
+  
+  "permissions": [
+    "storage",
+    "activeTab",
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ],
+  
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles/gradient-themes.css"],
+      "run_at": "document_start"
+    }
+  ],
+  
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Gradient Glow Interface Pack",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  
+  "web_accessible_resources": [
+    "styles/*.css",
+    "assets/*.png",
+    "assets/*.jpg"
+  ],
+  
+  "applications": {
+    "gecko": {
+      "id": "gradient-glow-interface-pack@xmp.com",
+      "strict_min_version": "58.0"
+    }
+  }
+} 

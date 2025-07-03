@@ -1,0 +1,60 @@
+# Git Commands để Push lên GitHub
+
+## 📋 Prerequisites:
+1. Cài đặt Git: https://git-scm.com/download/win
+2. Tạo GitHub repository: https://github.com/tuananh93cp/Gradient-Glow-Interface-Pack
+
+## 🔧 Git Commands:
+
+# 1. Initialize git repository
+git init
+
+# 2. Configure git (thay thế email của bạn)
+git config user.name "XMP"
+git config user.email "lanhanh64529@gmail.com"
+
+# 3. Add remote repository
+git remote add origin https://github.com/tuananh93cp/Gradient-Glow-Interface-Pack.git
+
+# 4. Create .gitignore file (optional)
+echo "*.zip" > .gitignore
+echo "node_modules/" >> .gitignore
+echo ".DS_Store" >> .gitignore
+
+# 5. Add all files
+git add .
+
+# 6. Commit với message
+git commit -m "Initial release: Gradient Glow Interface Pack v1.0.0
+
+Features:
+- 6 stunning gradient themes (purple-pink, blue-cyan, orange-red, green-blue, dark-gold, default)
+- Beautiful popup interface with intuitive theme selector
+- Comprehensive options page with live preview functionality
+- Customizable glow effects with adjustable intensity (10%-200%)
+- Smooth animations with configurable speed
+- Cross-browser compatibility (Chrome Manifest V3 & Firefox Manifest V2)
+- Performance optimized with CSS3 and GPU acceleration
+- Cloud sync for settings across devices
+- Complete documentation and store descriptions included
+- Ready for Chrome Web Store and Firefox Add-ons submission
+
+Technical:
+- Minimal permissions for security (storage, activeTab, scripting)
+- Proper error handling and DOM ready checks
+- Service Worker compatible (Chrome V3)
+- Responsive design for desktop and mobile
+- No data collection, privacy-focused"
+
+# 7. Push to GitHub
+git branch -M main
+git push -u origin main
+
+# 8. Tag release version
+git tag -a v1.0.0 -m "Version 1.0.0 - Initial release"
+git push origin v1.0.0
+
+## 🎯 Để push updates sau này:
+# git add .
+# git commit -m "Update: description of changes"
+# git push 

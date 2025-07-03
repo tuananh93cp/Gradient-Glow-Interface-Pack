@@ -1,0 +1,182 @@
+/* Gradient Glow Interface Pack - Core CSS */
+/* This file contains the base styles that are injected into web pages */
+
+/* Base styles for enhanced elements */
+.gradient-glow-enhanced {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Gradient animations */
+@keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes glowPulse {
+    0% { box-shadow: 0 0 20px rgba(102, 126, 234, 0.3); }
+    50% { box-shadow: 0 0 30px rgba(102, 126, 234, 0.5); }
+    100% { box-shadow: 0 0 20px rgba(102, 126, 234, 0.3); }
+}
+
+@keyframes floatUp {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes shimmer {
+    0% { background-position: -1000px 0; }
+    100% { background-position: 1000px 0; }
+}
+
+/* Utility classes for dynamic styling */
+.gradient-glow-primary {
+    background: var(--gradient-primary, linear-gradient(135deg, #667eea 0%, #764ba2 100%)) !important;
+}
+
+.gradient-glow-secondary {
+    background: var(--gradient-secondary, linear-gradient(135deg, #f093fb 0%, #f5576c 100%)) !important;
+}
+
+.gradient-glow-accent {
+    color: var(--gradient-accent, #667eea) !important;
+}
+
+.gradient-glow-text {
+    color: var(--gradient-text, #ffffff) !important;
+}
+
+/* Glow effects */
+.gradient-glow-effect {
+    box-shadow: 0 0 25px rgba(102, 126, 234, 0.3) !important;
+}
+
+.gradient-glow-effect:hover {
+    box-shadow: 0 0 35px rgba(102, 126, 234, 0.5) !important;
+}
+
+/* Animation classes */
+.gradient-glow-animated {
+    animation: glowPulse 3s ease-in-out infinite !important;
+}
+
+.gradient-glow-flow {
+    background-size: 200% 200% !important;
+    animation: gradientFlow 8s ease infinite !important;
+}
+
+.gradient-glow-float {
+    animation: floatUp 6s ease-in-out infinite !important;
+}
+
+.gradient-glow-shimmer {
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0) 100%
+    ) !important;
+    background-size: 1000px 100% !important;
+    animation: shimmer 2s infinite !important;
+}
+
+/* Glass morphism effects */
+.gradient-glow-glass {
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 16px !important;
+}
+
+.gradient-glow-glass-strong {
+    background: rgba(255, 255, 255, 0.2) !important;
+    backdrop-filter: blur(30px) !important;
+    -webkit-backdrop-filter: blur(30px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-radius: 20px !important;
+}
+
+/* Responsive design helpers */
+@media (max-width: 768px) {
+    .gradient-glow-enhanced {
+        transition: all 0.2s ease !important;
+    }
+    
+    .gradient-glow-effect {
+        box-shadow: 0 0 15px rgba(102, 126, 234, 0.3) !important;
+    }
+    
+    .gradient-glow-animated {
+        animation: glowPulse 4s ease-in-out infinite !important;
+    }
+}
+
+/* Accessibility considerations */
+@media (prefers-reduced-motion: reduce) {
+    .gradient-glow-enhanced,
+    .gradient-glow-animated,
+    .gradient-glow-flow,
+    .gradient-glow-float,
+    .gradient-glow-shimmer {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .gradient-glow-enhanced {
+        border: 2px solid currentColor !important;
+    }
+    
+    .gradient-glow-glass,
+    .gradient-glow-glass-strong {
+        background: rgba(0, 0, 0, 0.8) !important;
+        border: 2px solid currentColor !important;
+    }
+}
+
+/* Dark mode optimizations */
+@media (prefers-color-scheme: dark) {
+    .gradient-glow-glass {
+        background: rgba(0, 0, 0, 0.3) !important;
+    }
+    
+    .gradient-glow-glass-strong {
+        background: rgba(0, 0, 0, 0.5) !important;
+    }
+}
+
+/* Performance optimizations */
+.gradient-glow-enhanced {
+    will-change: transform, opacity, box-shadow !important;
+    transform: translateZ(0) !important;
+    backface-visibility: hidden !important;
+}
+
+/* Focus styles for accessibility */
+.gradient-glow-enhanced:focus {
+    outline: 3px solid var(--gradient-accent, #667eea) !important;
+    outline-offset: 2px !important;
+}
+
+/* Custom scrollbar for enhanced areas */
+.gradient-glow-enhanced::-webkit-scrollbar {
+    width: 8px !important;
+}
+
+.gradient-glow-enhanced::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 4px !important;
+}
+
+.gradient-glow-enhanced::-webkit-scrollbar-thumb {
+    background: var(--gradient-secondary, linear-gradient(135deg, #f093fb 0%, #f5576c 100%)) !important;
+    border-radius: 4px !important;
+}
+
+.gradient-glow-enhanced::-webkit-scrollbar-thumb:hover {
+    background: var(--gradient-accent, #667eea) !important;
+} 

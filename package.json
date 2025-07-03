@@ -1,0 +1,76 @@
+{
+  "name": "gradient-glow-interface-pack",
+  "version": "1.0.0",
+  "description": "Transform your browser with stunning gradient glow themes and beautiful interface designs. Customize your browsing experience with modern, eye-catching visual effects.",
+  "main": "background.js",
+  "scripts": {
+    "build": "echo 'Building extension...' && npm run lint",
+    "lint": "echo 'Linting files...'",
+    "test": "echo 'No tests specified'",
+    "package-chrome": "zip -r gradient-glow-chrome-v1.0.0.zip . -x '*.git*' 'node_modules/*' 'package*.json' '*.md' 'manifest-firefox.json'",
+    "package-firefox": "zip -r gradient-glow-firefox-v1.0.0.zip . -x '*.git*' 'node_modules/*' 'package*.json' '*.md' 'manifest.json' && mv manifest-firefox.json manifest.json",
+    "dev": "echo 'Development mode - Load unpacked in browser'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tuananh93cp/Gradient-Glow-Interface-Pack.git"
+  },
+  "keywords": [
+    "chrome-extension",
+    "firefox-addon",
+    "browser-extension",
+    "gradient",
+    "glow",
+    "theme",
+    "interface",
+    "customization",
+    "ui",
+    "ux",
+    "css",
+    "animation",
+    "modern",
+    "beautiful"
+  ],
+  "author": {
+    "name": "XMP",
+    "email": "lanhanh64529@gmail.com",
+    "url": "http://github.com/tuananh93cp/Gradient-Glow-Interface-Pack"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tuananh93cp/Gradient-Glow-Interface-Pack/issues",
+    "email": "lanhanh64529@gmail.com"
+  },
+  "homepage": "https://github.com/tuananh93cp/Gradient-Glow-Interface-Pack#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {
+    
+  },
+  "dependencies": {
+    
+  },
+  "extensionInfo": {
+    "manifestVersion": {
+      "chrome": 3,
+      "firefox": 2
+    },
+    "permissions": [
+      "storage",
+      "activeTab",
+      "scripting"
+    ],
+    "targetBrowsers": [
+      "Chrome",
+      "Firefox",
+      "Edge",
+      "Opera"
+    ],
+    "storeStatus": {
+      "chromeWebStore": "pending",
+      "firefoxAddons": "pending"
+    }
+  },
+  "private": false
+} 

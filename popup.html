@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Glow Interface Pack</title>
+    <link rel="stylesheet" href="styles/popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="icons/icon48.png" alt="Logo">
+                <h1>Gradient Glow</h1>
+            </div>
+            <div class="version">v1.0.0</div>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2>Chủ đề</h2>
+                <div class="theme-grid">
+                    <div class="theme-item" data-theme="default">
+                        <div class="theme-preview default-theme"></div>
+                        <span>Mặc định</span>
+                    </div>
+                    <div class="theme-item" data-theme="purple-pink">
+                        <div class="theme-preview purple-pink-theme"></div>
+                        <span>Tím - Hồng</span>
+                    </div>
+                    <div class="theme-item" data-theme="blue-cyan">
+                        <div class="theme-preview blue-cyan-theme"></div>
+                        <span>Xanh - Cyan</span>
+                    </div>
+                    <div class="theme-item" data-theme="orange-red">
+                        <div class="theme-preview orange-red-theme"></div>
+                        <span>Cam - Đỏ</span>
+                    </div>
+                    <div class="theme-item" data-theme="green-blue">
+                        <div class="theme-preview green-blue-theme"></div>
+                        <span>Xanh lá - Xanh dương</span>
+                    </div>
+                    <div class="theme-item" data-theme="dark-gold">
+                        <div class="theme-preview dark-gold-theme"></div>
+                        <span>Tối - Vàng</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Cài đặt</h2>
+                <div class="settings">
+                    <div class="setting-item">
+                        <label>
+                            <input type="checkbox" id="enableGlow" checked>
+                            <span class="checkbox-custom"></span>
+                            Hiệu ứng phát sáng
+                        </label>
+                    </div>
+                    <div class="setting-item">
+                        <label>
+                            <input type="checkbox" id="enableAnimation" checked>
+                            <span class="checkbox-custom"></span>
+                            Hiệu ứng động
+                        </label>
+                    </div>
+                    <div class="setting-item">
+                        <label>
+                            <input type="range" id="intensity" min="0.1" max="2" step="0.1" value="1">
+                            <span>Độ mạnh: <span id="intensityValue">100%</span></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <button id="optionsBtn" class="btn-secondary">Cài đặt chi tiết</button>
+            <button id="resetBtn" class="btn-primary">Đặt lại</button>
+        </div>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html> 
