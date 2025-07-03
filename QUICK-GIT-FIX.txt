@@ -1,0 +1,25 @@
+# QUICK FIX: Git Push Error
+
+## Sau khi cài đặt Git, chạy commands này:
+
+# Fix the push error
+git pull origin main --allow-unrelated-histories
+
+# Add all files
+git add .
+
+# Commit merge
+git commit -m "Merge remote changes and add extension files"
+
+# Push to GitHub
+git push origin main
+
+# Tag version
+git tag -a v1.0.0 -m "Version 1.0.0 - Initial release"
+git push origin v1.0.0
+
+## Hoặc nếu muốn force push (ghi đè remote):
+# git push origin main --force
+
+## Download Git:
+# https://git-scm.com/download/win 
